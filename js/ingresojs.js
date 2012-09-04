@@ -1,4 +1,5 @@
 $(document).ready(function(){
+   alert('naknda');
    
    $('[type="date"]').datepicker({
    dateFormat: 'dd/mm/yy',
