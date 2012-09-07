@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ingresa documentos</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+
+
+        <link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />                  <!-- KICKSTART -->
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui-1.8.23.custom.css" media="all" />                  <!-- KICKSTART -->
+       
+       
+       
+        <script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="js/prettify.js"></script>                                   <!-- PRETTIFY -->
+        <script type="text/javascript" src="js/kickstart.js"></script>  
+        <script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>  
+        
+        
+        <link rel="stylesheet" type="text/css" media="all" href="css/css_ingresa_documentos.css" />
+        <script type="text/javascript" src="js/consultas.js"></script>
+        
+</head>
+
+<body>
+    
+    <div id="container"  >
+        
+<form action="" method="post" class="niceform">
+	<fieldset>
+    	  <dl>
+            <dt><label for="titulo"> titulo : </label></dt>
+            <dd> <input type="text" style="width:20em" />
+            <dd>   <span  class="icon blue large busqueda" data-icon="s"></span> </dd>                                       
+           
+        </dl>
+        
+    
+          <!-- Tabs Left -->
+           <ul id="masopciones" class="tabs left">
+            <li><a href="#avanzado">mas</a></li>
+            <li><a href="#palabrasB">por palabras</a></li>
+          </ul> 
+            
+            
+        <!-- mas opciones de busquedas -->
+        <div id="avanzado"  class="tab-content" >
+        
+               <dl>
+                <dt><label for="organizacion">Organizacion :</label></dt>
+                    <dd>
+                        <select class="fancy" id="organizacion">
+                                                <option >adiministracion </option>
+                                                <option >organizacion </option>
+                                                <option >asociacion 1 </option>
+
+                        </select > 	
+                        
+                   </dd>
+                </dl>
+                <dl>
+
+                    <dt><label for="eje">Eje : </label></dt>
+                    <dd>
+                    <select  class="fancy" id="eje">
+                                        <option >derechos humanos y una vida digna </option>
+                                        <option >desarrollo socio economico sostenible</option>
+                                        <option >gobernabilidad y participacion ciudadana</option>
+                                </select > 
+                    </dd>
+                </dl>
+            </div>
+            
+        <div id="palabrasB" class="tab-content">
+          <dl>
+            <dt><label > palabra :  </label></dt>
+            <dd> <input  type="text" style="width:20em" />
+                                                  
+           
+        </dl>
+            
+        </div>
+            
+        
+     
+        
+        </fieldset>
+    
+        <fieldset>
+         <table cellspacing="0" cellpadding="0">
+            <thead><tr>
+                    <th>Item1</th>
+                    <th>Item2</th>
+                    <th>Item3</th>
+            </tr></thead>
+            <tbody><tr  class="tooltip-right"  data-content="#fila1">
+                    <td><img src="css/img/adobe.gif" class="icono_m"/></td>
+                    <td>caracterizacion del municipio de acacias, departamento del meta</td>
+                    <td>desarrollo socio economico sostenible</td>
+            </tr>
+            <tr class="tooltip-right"  data-content="#fila2">
+                <td><img src="css/img/word.gif" class="icono_m"/></td>
+                    <td>Item2</td>
+                    <td>Item3</td>
+            </tr><tr class="tooltip-right"  data-content="#fila2">
+                    <td>Item1</td>
+                    <td>Item2</td>
+                    <td>Item3</td>
+            </tr><tr class="tooltip-right"  data-content="#fila2">
+                    <td>Item1</td>
+                    <td>Item2</td>
+                    <td>Item3</td>
+            </tr></tbody>
+            </table>
+    	
+    </fieldset>
+
+</form>
+
+   <!-- datos para mostrar -->
+   
+   <div class="tooltip-content " id="fila1">
+       <h5>datos del archivo</h5>
+       <table cellspacing="0" cellpadding="0" style="font: 150% sans-serif small-caps; ">
+            <thead><tr>
+                    <th>---</th>
+                    <th>----</th>
+              </tr></thead>
+            <tbody><tr >
+                    <td>fecha : </td>
+                    <td>7/08/12</td>
+                    
+            </tr><tr>
+                    <td>ingresado :</td>
+                    <td>alguien</td>
+            </tr><tr>
+                    <td>titulo :</td>
+                    <td>caracterizacion del municipio de acacias, departamento del meta</td>
+            </tr><tr>
+                    <td>eje:</td>
+                    <td>desarrollo socio economico sostenible</td>
+            </tr>   
+            </tbody>
+       </table>
+       <p>-----------------</p></div>
+        
+   
+    <div class="tooltip-content " id="fila2"  style="background:#4DA0D2;">
+       <h5>datos del archivo</h5>
+       <table cellspacing="0" cellpadding="0">
+            <thead><tr>
+                    <th>---</th>
+                    <th>----</th>
+              </tr></thead>
+            <tbody><tr >
+                    <td>fecha : </td>
+                    <td>7/08/12</td>
+            </tr><tr>
+                    <td>ingresado :</td>
+                    <td>alguien</td>
+            </tr><tr>
+            </tbody>
+       </table>
+       <p>-----------------</p></div>
+        
+        
+        
+        
+<p id="footer">pie de pagina<br />- <br /></p>
+</div></body>
+</html>

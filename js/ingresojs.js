@@ -1,5 +1,5 @@
 $(document).ready(function(){
-   alert('naknda');
+
    
    $('[type="date"]').datepicker({
    dateFormat: 'dd/mm/yy',
@@ -22,7 +22,8 @@ $(document).ready(function(){
    *funcionalidad del boton agregar archivo
    **/
    $("#agregaarchivo").click(function(){
-      var $fila=$("<tr></tr>");
+     $(this).addClass("ui-widget-shadow");
+     var $fila=$("<tr></tr>");
       var $columna1=$("<th>3</th>").addClass('columna1');
       var $columna2=$("<td></td>").addClass('columna2');
       var $columna3=$("<td></td>").addClass('columna3');
@@ -112,6 +113,23 @@ function miInput(input){
   });
    
 }  
-   
-   
+
+ //  setInterval(function(){console.log($(window).scrollTop());},1000);
+/*
+
+
+     var posicion =$("#cuadroFlotante").offset();
+     var distancia=30;
+     
+     $(window).scroll(function(){
+        var pantallaTop=$(window).scrollTop();
+            $("#cuadroFlotante").stop().animate({
+               top: pantallaTop + distancia 
+               
+            });
+            console.log("mi pantalla "+pantallaTop +"   -- "+posicion.top);
+     });      
+ */       
+        
+         
 });

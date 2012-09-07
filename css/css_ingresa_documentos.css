@@ -33,6 +33,7 @@ fieldset
       -webkit-box-shadow:0px 0px 9px #4D99E0;
       -moz-box-shadow:0px 0px 9px #4D99E0;
 
+       background:  rgb(77,150,210);
       background: -moz-linear-gradient(left, rgba(255,255,255,0.5), rgba(77,150,210,0.8));
       background: -webkit-linear-gradient(top, #65b6cf , #ECEAF5);
       background: -linear-gradient(top, #65b6cf , #ECEAF5);
@@ -46,6 +47,7 @@ fieldset
       -moz-border-radius: 3px;
       -webkit-border-radius:3px;
       box-shadow:0px 0px 9px #EEF3F7;
+      background:rgb(240,240,255);
       background: -moz-linear-gradient(left, rgb(209,218,250), rgb(240,240,255));
       background: -webkit-linear-gradient(top, #65b6cf , #ECEAF5);
       background: -linear-gradient(top, #65b6cf , #ECEAF5);
@@ -102,7 +104,7 @@ label
        font-weight:bold; 
        color:#666;}
     
-label.opt {font-weight:normal;}
+
 
 dl {clear:both;}
 
@@ -115,7 +117,7 @@ dt
 
 dd 
     {float:left; 
-     width:30%; 
+    /* width:30%;*/ 
      line-height:30px;
      margin:0 0 10px 0;}
     
@@ -142,6 +144,24 @@ background-image: -ms-linear-gradient(bottom, rgb(117,175,209) 85%, rgb(51,107,2
 
 }
 
+.busqueda{
+    margin:2px 15px;
+    border:1px solid #fff; 
+    border-color:#e5e5c3 #505014 #505014 #e5e5c3;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    cursor: pointer;
+}
+
+.busqueda:hover {
+    transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -webkit-transform:scale(1.2); 
+    -o-transform:scale(1.2);
+}
+
+
 /*modificacion de las tablas de archivos*/
 .columna1{
     width:5%;
@@ -151,4 +171,15 @@ background-image: -ms-linear-gradient(bottom, rgb(117,175,209) 85%, rgb(51,107,2
 }
 .columna3{
     width:200px; 
+}
+
+table tbody tr:hover{
+    border: 1px solid #4DA0D2;
+    
+}
+
+.icono_m{
+    width:45px;
+    height:45px;
+    
 }
